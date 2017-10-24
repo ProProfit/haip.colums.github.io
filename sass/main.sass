@@ -1,0 +1,155 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+/* menu */
+
+div,ul,li,a 
+  display: block
+  margin: 0
+  padding: 0
+
+.navbar 
+  max-width: 1160px
+  margin: 0 auto
+
+.navbar-out 
+  width: 100%
+  background-color: #34495e
+  overflow: hidden
+
+ul.navbar-left li 
+  float: left
+  list-style: none
+
+ul.navbar-left li a,
+ul.navbar-right li a 
+  padding: 15px 20px
+  text-decoration: none
+  background-color: #34495e
+  color: #fff
+  -webkit-transition: all 0.30s
+  -moz-transition: all 0.30s
+  -ms-transition: all 0.30s
+  -o-transition: all 0.30s
+
+
+ul.navbar-left li a:hover,
+ul.navbar-right li a:hover 
+  background-color: #282b2f
+
+
+.navbar-right 
+  display: block
+  float: right
+
+.navbar-right li 
+  float: left
+
+.navbar a i 
+  font-size: 22px
+
+.navbar-ac
+  background-color: #73A6D8
+  padding: 10px
+  color: #fff
+  font-weight: bold
+  cursor: pointer
+  display: none
+
+.navbar-ac:before 
+  content: "\f0c9"
+  font-family: FontAwesome
+  font-weight: normal
+  font-size: 16px
+
+@media (max-width:768px)
+  /*Mobil Uyumlu Menu*/
+  
+  .navbar-ac
+    display: block
+  
+  ul
+  .navbar-left 
+    display: none
+    float: none
+  
+ul.navbar-left li,
+  .navbar-right li 
+    float: none
+  
+  ul.navbar-left li a 
+  .navbar-right 
+    float: none
+
+@media (min-width:768px) 
+  ul.navbar-left, .navbar-right, 
+    display: block!important
+
+
+
+/* Content */
+#container 
+  width: 100%
+
+#card-container
+  text-align: center
+
+.col-wrapper
+  display: inline-block
+  margin: 0 -5px 0 0
+  width: 49%
+  vertical-align: top
+
+.col 
+  display: inline-block
+  margin: 0 -5px -5px 0
+  width: 50%
+  vertical-align: top
+
+.item
+  width: calc(100% - 25px)
+  background: #ECEFF1
+  margin: 25px auto
+  text-align: left 
+
+.item-img
+  position: relative
+  width: 100%
+
+.item-img 
+  img 
+    position: relative
+    width: 100%
+
+
+.item-desc 
+  position: relative
+  padding: 25px
+
+
+.item-desc 
+  a 
+    position: relative
+    display: block
+    font-weight: 500
+    margin: 25px 0 0 0
+    color: #37474F
+
+.item-heading 
+  font-size: 1.25em
+  margin: 0 0 10px 0
+  font-weight: 500
+
+
+  /* footer */
+
+footer
+  display: inline-block
+  position: relative
+  margin-bottom: 0
+  background-color: #34495e
+  color: #fff
+  
+@import "media" // Всегда в конце
